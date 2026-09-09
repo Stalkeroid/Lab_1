@@ -16,3 +16,8 @@
  Modify: Create new files, patch existing code/documentation, and update specifications.
  Execute: Run workspace commands (view repository status, execute build scripts or tests if required).
  Constraints: Autonomous merge of conflicting changes or architectural decisions is forbidden; human review is required at all GIT-GATE checkpoints.
+ 
+ # 4. SDD Conflict & Review Policy
+* Ground Truth: All proposed changes must strictly conform to specifications in `/spec`.
+* Conflict Resolution: The agent must not resolve merge conflicts autonomously; human approval is required.
+* Traceability: Every modification made by the agent must be verified and logged before checkpoint gate approval.
