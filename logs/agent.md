@@ -17,7 +17,11 @@
  Execute: Run workspace commands (view repository status, execute build scripts or tests if required).
  Constraints: Autonomous merge of conflicting changes or architectural decisions is forbidden; human review is required at all GIT-GATE checkpoints.
  
- # 4. SDD Conflict & Review Policy
-* Ground Truth: All proposed changes must strictly conform to specifications in `/spec`.
-* Conflict Resolution: The agent must not resolve merge conflicts autonomously; human approval is required.
-* Traceability: Every modification made by the agent must be verified and logged before checkpoint gate approval.
+# 4. SDD Conflict, Review & Escalation Policy
+ Ground Truth: All proposed changes must strictly conform to specifications in `/spec`.
+ Conflict Resolution: The agent must not resolve merge conflicts autonomously; human approval is required.
+ Traceability: Every modification made by the agent must be verified and logged before checkpoint gate approval.
+ Critical Decisions: Architectural changes, breaking changes, or modifications to `/spec` require explicit human approval before commit.
+ Merge Gate: All branch merges must be manually triggered by the human operator; the agent prepares commits and branches for review only.
+ Audit Trail: Every modification must include clear commit messages that document the rationale and link to specifications.
+ Workspace Integrity: Before each major operation, verify current state via `git status` and `git log` to prevent unintended overrides or state conflicts.
