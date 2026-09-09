@@ -1,11 +1,7 @@
-Система призначена для комплексного контролю працездатності 3D-принтерів, планування сервісних робіт та управління складом комплектуючих.
+The system is designed for comprehensive monitoring of 3D printers' operational health, maintenance scheduling, and spare parts inventory management.
 
-Основні функції системи:
-
-- Облік напрацювання та планове ТО: автоматичний підрахунок мотогодин обладнання, розрахунок нормативного зносу ресурсних вузлів (ремені, сопла, підшипники, PTFE-трубки) і формування графіка профілактичних робіт (очищення та змащування напрямних, калібрування, заміна за регламентом).
-
-- Журнал інцидентів та позаплановий ремонт: оперативна фіксація технічних несправностей оператором вручну (забиття хотенду, пропуск кроків та фіксація інших помилок наочно) з прив'язкою до конкретного принтера (за SN).
-
-- Складський облік комплектуючих: ведення залишків запчастин на складі, автоматичне списання деталей при проведенні ремонту або планової заміни та сповіщення про досягнення критично низького залишку.
-
-- Історія та статистика: формування паспортів обладнання з повним журналом проведених замін, ремонтів та розрахунком часу роботи принтерів.
+Core System Functions:
+- Operating Hours & Scheduled Maintenance: Automatic tracking of equipment operating hours, wear estimation for consumable components (belts, nozzles, bearings, PTFE tubes), and generation of preventive maintenance schedules (guide cleaning and lubrication, calibration, scheduled replacements).
+- Incident Logging & Unscheduled Repairs: Prompt manual logging of technical malfunctions by the operator (hotend clogs, skipped steps, and visual recording of other errors) linked to a specific printer (by SN).
+- Spare Parts Inventory Management: Tracking stock levels, automated parts deduction upon repair or scheduled replacement, and alerts when stock reaches critically low levels.
+- History & Statistics: Generation of equipment passports with full logs of performed replacements, repairs, and calculated total operational run-time for printers.
